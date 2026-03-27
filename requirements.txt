@@ -1,0 +1,12 @@
+requirements = """streamlit
+openai
+pytesseract
+pdf2image
+Pillow
+pandas
+"""
+with open("/content/requirements.txt", "w") as f:
+    f.write(requirements)
+
+from google.colab import files
+files.download("/content/requirements.txt")
